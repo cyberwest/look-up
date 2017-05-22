@@ -1,0 +1,59 @@
+
+<!doctype html>
+
+	<head>
+
+		<title>Look Up!</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+	<body>
+
+		<div class="window landing">
+
+			<div class="landing-wrapper">
+			
+				<h1>Look Up!</h1>
+				<button data-button="landing" class="landing-play" id="landing-play">Play</button>
+
+			</div>
+
+		</div>
+
+		<div class="window video">
+
+			<div class="video-tools" id="video-tools">
+				
+				<button data-button="video" id="video-play" class="video-play">Play</button>
+				<button data-video="one" id="switch-one" class="switch-one switch-button button-active">Switch 1</button>
+				<button data-video="two" id="switch-two" class="switch switch-button">Switch 2</button>
+				<button data-video="three" id="switch-three" class="switch switch-button">Switch 3</button>
+
+			</div>
+			
+			<div id="video-wrapper-one" class="video-wrapper video-wrapper-one video-active">
+
+				<video id="video-one" class="video-one" src="https://drive.google.com/uc?export=download&id=0ByWJwfCMBWJLUjlUYlZnUldPSms" loop></video>
+
+			</div>
+
+			<div id="video-wrapper-two" class="video-wrapper video-wrapper-two">
+
+				<video id="video-two" class="video-two" src="https://drive.google.com/uc?export=download&id=0ByWJwfCMBWJLeUViWVNIX2Vyajg" loop muted></video>
+
+			</div>
+			
+			<div id="video-wrapper-three" class="video-wrapper video-wrapper-three">
+
+				<video id="video-three" class="video-three" src="https://drive.google.com/uc?export=download&id=0ByWJwfCMBWJLaWozRGh1TUVpdVE" loop muted=""></video>
+
+			</div>
+
+		</div>
+
+		<script src="script.js"></script>
+
+	</body>
+</html>
