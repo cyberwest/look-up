@@ -4,6 +4,8 @@
 	var switchButtons = document.querySelectorAll(".switch-button");
 	var videoWrappers = document.querySelectorAll(".video-wrapper");
 
+	var videoWindow = document.getElementById("video-window");
+
 	// define the landing play button 
 	var landingPlay = document.getElementById("landing-play");
 	// define the video play button
@@ -111,10 +113,13 @@
 		videoTwo.play();
 		videoThree.play();
 
+		videoWindow.classList.add("move-content");
+
 		// change videoPlay button text to pause
 		videoPlay.innerHTML = "Pause";
 		// add "playing" class to video play button
 		videoPlay.classList.add("playing");
+
 	}
 
 	// function for playing and pausing video using the video tools

@@ -3,6 +3,7 @@ body {
 	background-color: #242424;
 	color: #f8f8f8;
 	font-family: "Helvetica Neue";
+	overflow: hidden;
 }
 
 h1 {
@@ -14,6 +15,14 @@ p {
 	line-height: 150%;
 	font-weight: 300;
 }
+
+.move-content {
+
+    transform: translateY(-100vh);
+    transition: all ease 0.5s;
+
+}
+
 
 .landing-play {
 	border: 2px solid #f8f8f8;
@@ -73,7 +82,6 @@ p {
 	max-width: 600px;
 
 }
-
 
 /* active for video that should be on top */
 
