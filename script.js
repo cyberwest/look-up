@@ -21,6 +21,8 @@
 		videoTwo = document.getElementById("video-two"),
 		videoThree = document.getElementById("video-three");
 
+	var audioThree = document.getElementById("audio-three");
+
 
 	// loop to add event listener to each switch button
 	for(var i = 0; i < switchButtons.length; i++) {
@@ -113,6 +115,8 @@
 		videoOne.play();
 		videoTwo.play();
 		videoThree.play();
+
+		audioThree.play();
 
 		videoWindow.classList.add("move-content");
 
