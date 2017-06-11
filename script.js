@@ -21,6 +21,8 @@
 		videoTwo = document.getElementById("video-two"),
 		videoThree = document.getElementById("video-three");
 
+	var audioThree = document.getElementById("audio-three");
+
 	// loop to add event listener to each switch button
 	for(var i = 0; i < switchButtons.length; i++) {
 
@@ -113,6 +115,10 @@
 		videoTwo.play();
 		videoThree.play();
 
+		// audioOne.play();
+		// audioTwo.play();
+		audioThree.play();
+
 		videoWindow.classList.add("move-content");
 
 		// change videoPlay button text to pause
@@ -132,6 +138,12 @@
 			videoOne.pause();
 			videoTwo.pause();
 			videoThree.pause();
+
+			// audioOne
+			// audioTwo
+			audioThree.
+
+
 
 			// add paused class to video play button
 			videoPlay.classList.add("paused");
