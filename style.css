@@ -13,7 +13,7 @@ h1 {
 p {
 	font-size: 18px;
 	line-height: 150%;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .move-content {
@@ -31,7 +31,10 @@ p {
 
 
 .landing-play {
-	border: 2px solid #f8f8f8;
+	color: #242424;
+	background-color: #FFF
+	border: none;
+	font-weight: 600;
 	outline: none;
 	padding: 10px 20px;
 	font-family: "Helvetica Neue";
@@ -47,6 +50,7 @@ p {
 	font-size: 16px;
 	text-transform: uppercase;
 	border: none;
+	padding: 10px;
 }
 
 .window {
@@ -73,9 +77,10 @@ p {
 	position: absolute;
 	bottom: 0;
 	z-index: 5000;
-	background-color: purple;
+	background-color: transparent;
 	width: 100%;
 	text-align: center;
+	padding-bottom:20px;
 }
 
 .landing {
@@ -125,5 +130,29 @@ p {
 }
 
 .button-active {
-	background-color: maroon;
+	background-color: lightgrey;
+	border-bottom: 2px solid white;
+}
+
+#switch-one {
+	color: #FFF;
+	background-color: #50abd4;
+	font-weight: 600;
+}
+
+#switch-two {
+	color: #FFF;
+	background-color: #fda100;
+	font-weight: 600;
+}
+
+#switch-three {
+	background-color: #ed6b52;
+	color: #FFF;
+	font-weight: 600;
+}
+
+#video-play {
+	font-weight: 600;
+
 }

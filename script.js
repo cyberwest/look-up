@@ -53,6 +53,7 @@
 			videoThree.muted = true;
 
 			audioThree.muted = true;
+			audioThree.muted = false;
 
 			// remove active classes
 			switchButtons[1].classList.remove("button-active");
@@ -76,6 +77,7 @@
 			videoThree.muted = true;
 
 			audioThree.muted = true;
+			audioOne.muted = true;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -100,6 +102,8 @@
 			videoTwo.muted = true;
 
 			audioThree.muted = false;
+			audioOne.muted = false;
+			
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
