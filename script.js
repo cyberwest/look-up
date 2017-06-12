@@ -125,8 +125,6 @@
 
 		audioThree.play();
 
-		audioThree.muted = true;
-
 		videoWindow.classList.add("move-content");
 
 		// change videoPlay button text to pause
