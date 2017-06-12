@@ -1,4 +1,5 @@
 // script.js
+var videoOne = document.getElementById("video-one");
 
 videoOne.onwaiting = function() {
 
