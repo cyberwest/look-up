@@ -1,5 +1,6 @@
 // script.js
 
+videoOne.onwaiting = function() {
 
 // store switch buttons in an array in the dom
 	var switchButtons = document.querySelectorAll(".switch-button");
@@ -116,7 +117,7 @@
 
 	}
 
-	videoOne.onwaiting = function() {
+	
 
 		// function for playing video using landing page button
 		function landingPlayVideo(e) {
@@ -136,8 +137,6 @@
 			videoPlay.classList.add("playing");
 
 		}
-
-	};
 
 	// function for playing and pausing video using the video tools
 	function videoPlayVideo(e) {
@@ -241,7 +240,7 @@ function changeVideo() {
 	}
 }
 
-
+}
 
 
 
