@@ -125,7 +125,6 @@
 
 		audioThree.play();
 
-		audioThree.muted = true;
 
 		videoWindow.classList.add("move-content");
 
