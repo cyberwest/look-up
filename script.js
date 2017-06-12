@@ -255,12 +255,12 @@ function endOfVideo() {
 
 		endingWindow.classList.add("move-content-ending");
 
-		// videoOne.pause();
-		// videoTwo.pause();
-		// videoThree.pause();
+		videoOne.pause();
+		videoTwo.pause();
+		videoThree.pause();
 
-		// audioThree.pause();
-		// audioOne.pause();
+		audioThree.pause();
+		audioOne.pause();
 
 
 
