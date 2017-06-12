@@ -3,7 +3,7 @@ body {
 	background-color: #242424;
 	color: #f8f8f8;
 	font-family: "Helvetica Neue";
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 h1 {
