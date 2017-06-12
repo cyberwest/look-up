@@ -3,7 +3,7 @@ body {
 	background-color: #242424;
 	color: #f8f8f8;
 	font-family: "Helvetica Neue";
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 h1 {
@@ -21,6 +21,12 @@ p {
     transform: translateY(-100vh);
     transition: all ease 0.5s;
 
+}
+
+.move-content-ending {
+	transform: translateY(-200vh);
+    transition: all ease 0.5s;
+    z-index: 3000;
 }
 
 
@@ -46,6 +52,7 @@ p {
 .window {
 	width: 100vw;
 	height: 100vh;
+	background-color: #242424;
 }
 
 .video {
@@ -78,6 +85,18 @@ p {
 }
 
 .landing-wrapper {
+	text-align: center;
+	max-width: 600px;
+
+}
+
+.ending {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ending-wrapper {
 	text-align: center;
 	max-width: 600px;
 

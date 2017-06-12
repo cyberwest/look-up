@@ -1,8 +1,3 @@
-// script.js
-var videoOne = document.getElementById("video-one");
-
-videoOne.onwaiting = function() {
-
 // store switch buttons in an array in the dom
 	var switchButtons = document.querySelectorAll(".switch-button");
 	var videoWrappers = document.querySelectorAll(".video-wrapper");
@@ -117,8 +112,6 @@ videoOne.onwaiting = function() {
 		}
 
 	}
-
-	
 
 		// function for playing video using landing page button
 		function landingPlayVideo(e) {
@@ -240,6 +233,23 @@ function changeVideo() {
 			videoWrappers[1].classList.remove("video-active");
 	}
 }
+
+// 2:25
+videoOne.addEventListener("timeupdate", endOfVideo);
+
+// ending window elements
+var endingWindow = document.querySelector(".window-ending");
+
+// function to run when current time is between 134s and 135s;
+function endOfVideo() {
+
+	if(videoOne.currentTime > 134 && videoOne.currentTime < 135) {
+
+		endingWindow.classList.add("move-content-ending");
+
+	} else {
+
+	}
 
 }
 
