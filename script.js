@@ -188,8 +188,8 @@ function changeVideo() {
 
 	if(videoOne.currentTime > 20 && videoOne.currentTime < 21) {
 		// add active classes
-			switchButtons[2].classList.add("button-active");
-			videoWrappers[2].classList.add("video-active");
+			switchButtons[1].classList.add("button-active");
+			videoWrappers[1].classList.add("video-active");
 
 			// mute inactive videos, unmute the active video
 			videoThree.muted = false;
@@ -201,13 +201,13 @@ function changeVideo() {
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
 			videoWrappers[0].classList.remove("video-active");
-			switchButtons[1].classList.remove("button-active");
-			videoWrappers[1].classList.remove("video-active");
+			switchButtons[2].classList.remove("button-active");
+			videoWrappers[2].classList.remove("video-active");
 
 	} else if (videoOne.currentTime > 40 && videoOne.currentTime < 41) {
 		// add active classes
-			switchButtons[2].classList.add("button-active");
-			videoWrappers[2].classList.add("video-active");
+			switchButtons[1].classList.add("button-active");
+			videoWrappers[1].classList.add("video-active");
 
 			// mute inactive videos, unmute the active video
 			videoThree.muted = false;
@@ -219,13 +219,13 @@ function changeVideo() {
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
 			videoWrappers[0].classList.remove("video-active");
-			switchButtons[1].classList.remove("button-active");
-			videoWrappers[1].classList.remove("video-active");
+			switchButtons[2].classList.remove("button-active");
+			videoWrappers[2].classList.remove("video-active");
 
 	} else if (videoOne.currentTime > 60 && videoOne.currentTime < 61) {
 		// add active classes
-			switchButtons[2].classList.add("button-active");
-			videoWrappers[2].classList.add("video-active");
+			switchButtons[1].classList.add("button-active");
+			videoWrappers[1].classList.add("video-active");
 
 			// mute inactive videos, unmute the active video
 			videoThree.muted = false;
@@ -237,8 +237,8 @@ function changeVideo() {
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
 			videoWrappers[0].classList.remove("video-active");
-			switchButtons[1].classList.remove("button-active");
-			videoWrappers[1].classList.remove("video-active");
+			switchButtons[2].classList.remove("button-active");
+			videoWrappers[2].classList.remove("video-active");
 	}
 }
 
@@ -251,9 +251,18 @@ var endingWindow = document.querySelector(".window-ending");
 // function to run when current time is between 134s and 135s;
 function endOfVideo() {
 
-	if(videoOne.currentTime > 134 && videoOne.currentTime < 135) {
+	if(videoOne.currentTime > 144 && videoOne.currentTime < 145) {
 
 		endingWindow.classList.add("move-content-ending");
+
+		// videoOne.pause();
+		// videoTwo.pause();
+		// videoThree.pause();
+
+		// audioThree.pause();
+		// audioOne.pause();
+
+
 
 	} else {
 
