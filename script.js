@@ -20,6 +20,7 @@
 		videoThree = document.getElementById("video-three");
 
 	var audioThree = document.getElementById("audio-three");
+		audioOne = document.getElementById("audio-one");
 
 
 	// loop to add event listener to each switch button
@@ -74,7 +75,7 @@
 			videoOne.muted = true;
 			videoThree.muted = true;
 
-			audioThree.muted = false;
+			audioThree.muted = true;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -98,7 +99,7 @@
 			videoOne.muted = true;
 			videoTwo.muted = true;
 
-			audioThree.muted = true;
+			audioThree.muted = false;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -122,7 +123,7 @@
 			videoThree.play();
 
 			audioThree.play();
-
+			audioOne.play();
 
 			audioThree.volume = 0.15;
 
