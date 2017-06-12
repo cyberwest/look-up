@@ -1,5 +1,7 @@
 // script.js
 
+function app() {
+
 // store switch buttons in an array in the dom
 	var switchButtons = document.querySelectorAll(".switch-button");
 	var videoWrappers = document.querySelectorAll(".video-wrapper");
@@ -235,6 +237,10 @@ function changeVideo() {
 			videoWrappers[1].classList.remove("video-active");
 	}
 }
+
+}
+
+window.onload = app();
 
 
 
