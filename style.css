@@ -110,17 +110,14 @@ p {
 
 .video-wrapper-one {
 	z-index: 300;
-	background-color: red;
 }
 
 .video-wrapper-two {
 	z-index: 400;
-	background-color: yellow;
 }
 
 .video-wrapper-three {
 	z-index: 500;
-	background-color: pink;
 }
 
 .video-active {
