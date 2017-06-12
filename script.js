@@ -1,6 +1,5 @@
 // script.js
 
-function app() {
 
 // store switch buttons in an array in the dom
 	var switchButtons = document.querySelectorAll(".switch-button");
@@ -117,24 +116,28 @@ function app() {
 
 	}
 
+	videoOne.onwaiting = function() {
+
 		// function for playing video using landing page button
-	function landingPlayVideo(e) {
+		function landingPlayVideo(e) {
 
-		// play all videos
-		videoOne.play();
-		videoTwo.play();
-		videoThree.play();
+			// play all videos
+			videoOne.play();
+			videoTwo.play();
+			videoThree.play();
 
-		audioThree.play();
+			audioThree.play();
 
-		videoWindow.classList.add("move-content");
+			videoWindow.classList.add("move-content");
 
-		// change videoPlay button text to pause
-		videoPlay.innerHTML = "Pause";
-		// add "playing" class to video play button
-		videoPlay.classList.add("playing");
+			// change videoPlay button text to pause
+			videoPlay.innerHTML = "Pause";
+			// add "playing" class to video play button
+			videoPlay.classList.add("playing");
 
-	}
+		}
+
+	};
 
 	// function for playing and pausing video using the video tools
 	function videoPlayVideo(e) {
@@ -239,8 +242,6 @@ function changeVideo() {
 }
 
 }
-
-window.onload = app();
 
 
 
