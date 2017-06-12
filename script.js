@@ -53,7 +53,7 @@
 			videoTwo.muted = true;
 			videoThree.muted = true;
 
-			audioThree.musted = true;
+			audioThree.muted = true;
 
 			// remove active classes
 			switchButtons[1].classList.remove("button-active");
@@ -76,7 +76,7 @@
 			videoOne.muted = true;
 			videoThree.muted = true;
 
-			audioThree.musted = true;
+			audioThree.muted = true;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -93,11 +93,14 @@
 			// add active classes
 			switchButtons[2].classList.add("button-active");
 			videoWrappers[2].classList.add("video-active");
+			videoWrappers[2].classList.add("video-active");
 
 			// mute inactive videos, unmute the active video
 			videoThree.muted = false;
 			videoOne.muted = true;
 			videoTwo.muted = true;
+
+			audioThree.muted = false;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -173,6 +176,8 @@ videoOne.addEventListener("timeupdate", changeVideo);
 videoTwo.addEventListener("timeupdate", changeVideo);
 videoThree.addEventListener("timeupdate", changeVideo);
 
+audioThree.addEventListener("timeupdate", changeVideo);
+
 function changeVideo() {
 
 	if(videoOne.currentTime > 20 && videoOne.currentTime < 21) {
@@ -185,7 +190,7 @@ function changeVideo() {
 			videoOne.muted = true;
 			videoTwo.muted = true;
 
-			audioThree.musted = false;
+			audioThree.muted = false;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -203,7 +208,7 @@ function changeVideo() {
 			videoOne.muted = true;
 			videoTwo.muted = true;
 
-			audioThree.musted = false;
+			audioThree.muted = false;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
@@ -221,7 +226,7 @@ function changeVideo() {
 			videoOne.muted = true;
 			videoTwo.muted = true;
 
-			audioThree.musted = false;
+			audioThree.muted = false;
 
 			// remove active classes
 			switchButtons[0].classList.remove("button-active");
